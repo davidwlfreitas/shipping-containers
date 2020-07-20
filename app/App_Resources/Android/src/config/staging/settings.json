@@ -1,0 +1,6 @@
+{
+    "appId": "org.shipping_containers.app",
+    "minSdkVersion": null,
+    "targetSdkVersion": null,
+    "auth0Domain": ""
+}

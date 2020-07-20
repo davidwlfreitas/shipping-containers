@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1051084602275",
+    "firebase_url": "https://shipping-containers.firebaseio.com",
+    "project_id": "shipping-containers",
+    "storage_bucket": "shipping-containers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051084602275:android:798e3ac847ab449fc6f816",
+        "android_client_info": {
+          "package_name": "org.shipping_containers.app.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051084602275-eejpj5dmr5fd51ok699m1oqfdgao6ng2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpBTxYUiDygmpn2Ls4_JiLvVDcoSDwca8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051084602275-eejpj5dmr5fd51ok699m1oqfdgao6ng2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

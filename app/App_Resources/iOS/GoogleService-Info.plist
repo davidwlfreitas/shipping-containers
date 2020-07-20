@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CLIENT_ID</key>
+		<string>829285685146-q09t5bm1vvi2ajt6vfo1utjda7dr4h54.apps.googleusercontent.com</string>
+		<key>REVERSED_CLIENT_ID</key>
+		<string>com.googleusercontent.apps.829285685146-q09t5bm1vvi2ajt6vfo1utjda7dr4h54</string>
+		<key>API_KEY</key>
+		<string>AIzaSyDkFENGD4unAnte8-xRj_yAWFGIIO-sCHY</string>
+		<key>GCM_SENDER_ID</key>
+		<string>829285685146</string>
+		<key>PLIST_VERSION</key>
+		<string>1</string>
+		<key>BUNDLE_ID</key>
+		<string>org.shipping_containers.app</string>
+		<key>PROJECT_ID</key>
+		<string>credible-glow-237122</string>
+		<key>STORAGE_BUCKET</key>
+		<string>credible-glow-237122.appspot.com</string>
+		<key>IS_ADS_ENABLED</key>
+		<false></false>
+		<key>IS_ANALYTICS_ENABLED</key>
+		<false></false>
+		<key>IS_APPINVITE_ENABLED</key>
+		<true></true>
+		<key>IS_GCM_ENABLED</key>
+		<true></true>
+		<key>IS_SIGNIN_ENABLED</key>
+		<true></true>
+		<key>GOOGLE_APP_ID</key>
+		<string>1:829285685146:ios:fb24da8ef259e518a70c23</string>
+		<key>DATABASE_URL</key>
+		<string>https://credible-glow-237122.firebaseio.com</string>
+	</dict>
+</plist>

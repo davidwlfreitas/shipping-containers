@@ -1,0 +1,71 @@
+{
+  "name": "shipping-containers",
+  "version": "1.0.0",
+  "description": "Shipping containers recognition App built with NativeScript-Vue and Firebase.",
+  "author": "David Freitas",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "nativescript": {
+    "id": "org.shipping_containers.app.debug",
+    "templateVersion": "v2",
+    "tns-android": {
+      "version": "6.0.0"
+    },
+    "tns-ios": {
+      "version": "6.0.1"
+    }
+  },
+  "dependencies": {
+    "@nativescript-rtl/ui": "^0.1.2",
+    "@nativescript/theme": "^2.2.1",
+    "@nstudio/nativescript-cardview": "^1.0.0",
+    "@nstudio/nativescript-floatingactionbutton": "^2.0.0",
+    "@vue/devtools": "^5.0.6",
+    "axios": "^0.19.2",
+    "nativescript-fancyalert": "^3.0.9",
+    "nativescript-feedback": "^1.3.12",
+    "nativescript-inappbrowser": "^2.3.0",
+    "nativescript-lottie": "^4.0.1",
+    "nativescript-plugin-firebase": "^10.5.0",
+    "nativescript-secure-storage": "^2.6.0",
+    "nativescript-socketio": "^3.2.1",
+    "nativescript-theme-core": "^2.0.24",
+    "nativescript-toasty": "^1.3.0",
+    "nativescript-ui-dataform": "^6.0.0",
+    "nativescript-ui-listview": "^8.0.1",
+    "nativescript-ui-sidedrawer": "^8.0.0",
+    "nativescript-vue": "^2.4.0",
+    "nativescript-vue-devtools": "^1.2.0",
+    "nativescript-vue-navigator": "^1.2.0",
+    "tns-core-modules": "~6.4.0",
+    "vue": "^2.6.11",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.9.5",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^12.12.16",
+    "@vue/test-utils": "^1.0.0-beta.33",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^25.4.0",
+    "babel-loader": "^8.0.2",
+    "jest": "^25.4.0",
+    "nativescript-dev-webpack": "^1.0.0",
+    "nativescript-vue-jest": "^3.0.4",
+    "nativescript-vue-template-compiler": "^2.0.0",
+    "nativescript-worker-loader": "~0.9.0",
+    "node-sass": "^4.9.2",
+    "prettier": "2.0.5",
+    "tns-platform-declarations": "^6.0.0",
+    "ts-jest": "^25.4.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.2",
+    "vue-jest": "^3.0.5",
+    "vue-loader": "^15.4.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

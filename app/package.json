@@ -1,0 +1,13 @@
+{
+  "android": {
+    "v8Flags": "--expose_gc",
+    "forceLog": true,
+    "handleTimeZoneChanges": true,
+    "maxLogcatObjectSize": 2048,
+    "useV8Symbols": true,
+    "markingMode": "full"
+  },
+  "main": "main",
+  "name": "shipping-containers-app",
+  "version": "1.0.0"
+}

@@ -1,0 +1,16 @@
+# JetBrains project files
+.idea
+.cloud
+
+# NPM
+node_modules
+
+# NativeScript application
+hooks
+platforms
+
+# Jest
+coverage
+
+# App Android Configuration
+app/App_Resources/Android/*.json
