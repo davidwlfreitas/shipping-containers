@@ -1,11 +1,20 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, config } from '@vue/test-utils';
 import DrawerContent from '../../../app/components/DrawerContent.vue';
 import { store } from '../../shared/store';
+
+config.showDeprecationWarnings = false;
 
 jest.mock('@nativescript/theme', () => {
   return {
     getMode: jest.fn(),
     toggleMode: jest.fn(),
+  };
+});
+
+jest.mock('@/utils/FirebaseAnalytics', () => {
+  return {
+    sendLogEvent: jest.fn(),
+    sendCrashLog: jest.fn(),
   };
 });
 

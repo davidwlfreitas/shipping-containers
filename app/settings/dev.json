@@ -2,6 +2,6 @@
     "global.appTitle": "Shipping Containers App (development)",
     "global.applicationId": "org.shipping_containers.app.debug",
     "global.apiUrlRest": "https://app.bic-boxtech.org",
-    "global.AUTH0_clientID": "YmljYXBwOmJpY3NlY3JldGFwcA==",
+    "global.AUTH_BIC_clientID": "YmljYXBwOmJpY3NlY3JldGFwcA==",
     "global.isDevEnv": true
 }

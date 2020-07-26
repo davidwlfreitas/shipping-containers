@@ -1,5 +1,6 @@
 import { I_BIC_User } from '@/interfaces';
 import { TYPES } from '../types';
+import FeedbackNotification from '@/utils/FeedbackNotification';
 
 interface IState {
   accountInfo: I_BIC_User | null;
@@ -49,6 +50,7 @@ const actions = {
     });
   },
   [TYPES.actions.UPDATE_HAS_CONNECTION](context: any, payload: any) {
+    if (!payload) FeedbackNotification.showNoConnection();
     context.commit(TYPES.mutations.SET_HAS_CONNECTION, payload);
   },
   [TYPES.actions.UPDATE_IDENTIFIED_CONTAINER](context: any, payload: any) {

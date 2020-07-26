@@ -6,7 +6,6 @@
         :text="`${accountInfo.username__c}`"
       ></Label>
       <Label class="nt-drawer__header-footnote" v-if="accountInfo.email" :text="accountInfo.email"></Label>
-      <Label class="nt-drawer__header-brand" :text="deviceLanguage"></Label>
     </StackLayout>
 
     <ScrollView row="1" class="nt-drawer__body">
@@ -55,17 +54,9 @@ import Featured from '../pages/Featured';
 import Settings from '../pages/Settings';
 import { mapGetters } from 'vuex';
 import { TYPES } from '../store/types';
-import FirebaseAnalytics from '../utils/FirebaseAnalytics';
-// import { isAndroid, isIOS, device, screen, language } from "tns-core-modules/platform";
+import FirebaseAnalytics from '@/utils/FirebaseAnalytics';
 
 export default {
-  mounted() {
-    // console.log('isAndroid: ', isAndroid)
-    // console.log('isIOS: ', isIOS)
-    // console.log('Device: ', device)
-    // console.log('Screen: ', screen)
-    // console.log('Language: ', device ? device.language : '')
-  },
   computed: {
     ...mapGetters({
       accountInfo: `${TYPES.modules.CORE}/${TYPES.getters.GET_ACCOUNT}`,
@@ -79,8 +70,6 @@ export default {
       Home: Home,
       Featured: Featured,
       Settings: Settings,
-      // deviceLanguage: device ? device.language : ''
-      deviceLanguage: 'EN',
     };
   },
   components: {

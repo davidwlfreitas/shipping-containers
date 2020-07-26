@@ -9,6 +9,13 @@ jest.mock('@nativescript/theme', () => {
   };
 });
 
+jest.mock('@/utils/FirebaseAnalytics', () => {
+  return {
+    sendLogEvent: jest.fn(),
+    sendCrashLog: jest.fn(),
+  };
+});
+
 jest.mock('nativescript-secure-storage');
 
 const DrawerComponentStub = {

@@ -14,3 +14,5 @@ coverage
 
 # App Android Configuration
 app/App_Resources/Android/*.json
+
+__snapshots__/

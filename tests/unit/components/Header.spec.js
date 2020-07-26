@@ -1,8 +1,17 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, config } from '@vue/test-utils';
 import Header from '../../../app/components/Header.vue';
 import { store } from '../../shared/store';
 
+config.showDeprecationWarnings = false;
+
 jest.mock('nativescript-secure-storage');
+
+jest.mock('@/utils/FirebaseAnalytics', () => {
+  return {
+    sendLogEvent: jest.fn(),
+    sendCrashLog: jest.fn(),
+  };
+});
 
 const wrapper = shallowMount(Header, {
   store,

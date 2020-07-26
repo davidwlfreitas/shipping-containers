@@ -11,13 +11,7 @@ const errorMiddleware = (error: AxiosError, secureStorage: SecureStorage): Promi
       key: 'AUTH_CREDENTIALS',
     });
 
-    const orgJwt = await secureStorage.get({
-      key: 'orgJwt',
-    });
-
-    const jwt = JSON.parse(AUTH_CREDENTIALS).accessToken;
-
-    const token = orgJwt ? orgJwt : jwt;
+    const token = JSON.parse(AUTH_CREDENTIALS).accessToken;
 
     const hasConnection = store ? (store.state as any).CORE.hasConnection : null;
     if (!hasConnection) {

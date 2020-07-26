@@ -1,9 +1,15 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, config } from '@vue/test-utils';
 import Account from '../../../app/pages/Account.vue';
 import { store } from '../../shared/store';
 
+config.showDeprecationWarnings = false;
+
 const wrapper = shallowMount(Account, {
   store,
+});
+
+wrapper.setMethods({
+  save: jest.fn(),
 });
 
 describe('Account.vue', () => {
@@ -37,9 +43,5 @@ describe('Account.vue', () => {
 
   it('checks default data - the email of the account', () => {
     expect(wrapper.vm.account.email).toBe(wrapper.vm.accountInfo.email);
-  });
-
-  it('has a raddataform-stub', () => {
-    expect(wrapper.contains('raddataform-stub')).toBe(true);
   });
 });

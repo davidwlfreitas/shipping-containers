@@ -1,5 +1,5 @@
 import {
-  shallowMount
+  shallowMount, config
 } from '@vue/test-utils';
 import Profile from '../../../app/pages/Profile.vue';
 import {
@@ -11,6 +11,8 @@ import {
 import {
   actions
 } from '../../shared/actions';
+
+config.showDeprecationWarnings = false;
 
 jest.mock('nativescript-secure-storage');
 

@@ -20,12 +20,4 @@ describe('Home.vue', () => {
   it('snapshot', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
-
-  it('has a created hook', () => {
-    expect(typeof Home.created).toBe('function');
-  });
-
-  it('has a beforeDestroy hook', () => {
-    expect(typeof Home.beforeDestroy).toBe('function');
-  });
 });

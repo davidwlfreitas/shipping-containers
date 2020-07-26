@@ -1,27 +1,17 @@
 import Vue from 'vue';
-import { Feedback, FeedbackType, FeedbackPosition } from 'nativescript-feedback';
 import { TNSFancyAlert } from 'nativescript-fancyalert';
+import { SnackBar } from '@nstudio/nativescript-snackbar';
 
 const FeedbackNotification = new Vue({
   data: () => ({
-    feedback: new Feedback(),
+    snackbar: new SnackBar(),
   }),
   methods: {
     showNoConnection() {
-      FeedbackNotification.feedback.show({
-        message: 'No network connection available!',
-        position: FeedbackPosition.Bottom, // iOS only
-        type: FeedbackType.Error,
-        duration: 3000,
-      });
+      this.snackbar.simple('No Connection', '#fff', '', 5, false);
     },
-    showErrorMessage(content) {
-      FeedbackNotification.feedback.warning({
-        message: content,
-        position: FeedbackPosition.Bottom, // iOS only
-        type: FeedbackType.Error,
-        duration: 3000,
-      });
+    showErrorMessage(content: string, title = 'Error!', buttonText = 'Ok') {
+      return TNSFancyAlert.showError(title, content, buttonText);
     },
     showPopupWarning(content: string, title = 'Warning!', buttonText = 'Ok') {
       return TNSFancyAlert.showWarning(title, content, buttonText);

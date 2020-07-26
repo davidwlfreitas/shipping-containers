@@ -4,7 +4,6 @@ declare namespace NodeJS {
     apiUrlRest: string;
     applicationId: string;
     AUTH_BIC_clientID: string;
-    test_jwt: string;
     isDevEnv: boolean;
   }
 }

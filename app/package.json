@@ -5,7 +5,7 @@
     "handleTimeZoneChanges": true,
     "maxLogcatObjectSize": 2048,
     "useV8Symbols": true,
-    "markingMode": "full"
+    "markingMode": "none"
   },
   "main": "main",
   "name": "shipping-containers-app",
