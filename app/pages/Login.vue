@@ -2,11 +2,7 @@
   <Page actionBarHidden="true">
     <FlexboxLayout class="page">
       <StackLayout class="form">
-        <Image
-          class="logo"
-          src="https://www.bic-boxtech.org/bic/wp-content/themes/bic/images/bic-boxtech-logo-2018.png"
-          stretch="aspectFit"
-        />
+        <Image class="logo" src="res://logo" stretch="aspectFit" />
 
         <GridLayout rows="auto, auto, auto">
           <StackLayout row="0" class="input-field">
