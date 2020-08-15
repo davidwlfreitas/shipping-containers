@@ -47,7 +47,7 @@ tns build <platform> --env.production
 
 # :bug: Issues
 
-Feel free to **file a new issue** with a respective title and description on the the [useSelectItems hook](https://github.com/davidwlfreitas/shipping-containers/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/davidwlfreitas/shipping-containers/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+Feel free to **file a new issue** with a respective title and description on the the [Shipping Containers Scanner](https://github.com/davidwlfreitas/shipping-containers/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/davidwlfreitas/shipping-containers/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
 # :tada: Contributing
 
