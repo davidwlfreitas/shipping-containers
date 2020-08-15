@@ -59,7 +59,7 @@
         <Label *v-show="isLoggingIn" text="Forgot your password?" class="login-label" @tap="forgotPassword()"></Label>
       </StackLayout>
 
-      <Label class="login-label sign-up-label" @tap="toggleForm">
+      <Label class="login-label sign-up-label" @tap="signUp">
         <FormattedString>
           <Span :text="isLoggingIn ? 'Don’t have an account? ' : 'Back to Login'"></Span>
           <Span :text="isLoggingIn ? 'Sign up' : ''" class="bold"></Span>
@@ -72,6 +72,7 @@
 <script>
 import Home from './Home';
 import FeedbackNotification from '@/utils/FeedbackNotification';
+import InAppBrowser from 'nativescript-inappbrowser';
 
 export default {
   data() {
@@ -83,11 +84,46 @@ export default {
         password: '',
         confirmPassword: '',
       },
+      boxTechSignUpPage: 'https://app.bic-boxtech.org/signup'
     };
   },
   methods: {
-    toggleForm() {
-      this.isLoggingIn = !this.isLoggingIn;
+    async signUp() {
+      // this.isLoggingIn = !this.isLoggingIn;
+      if (await InAppBrowser.isAvailable()) {
+        await InAppBrowser.open(this.boxTechSignUpPage, {
+          // iOS Properties
+          dismissButtonStyle: 'cancel',
+          preferredBarTintColor: '#049c88',
+          preferredControlTintColor: 'white',
+          readerMode: false,
+          animated: true,
+          modalPresentationStyle: 'fullScreen',
+          modalTransitionStyle: 'partialCurl',
+          modalEnabled: true,
+          enableBarCollapsing: false,
+          // Android Properties
+          showTitle: true,
+          toolbarColor: '#6200EE',
+          secondaryToolbarColor: 'black',
+          enableUrlBarHiding: true,
+          enableDefaultShare: true,
+          forceCloseOnRedirection: false,
+          // Specify full animation resource identifier(package:anim/name)
+          // or only resource name(in case of animation bundled with app).
+          animations: {
+            startEnter: 'slide_in_right',
+            startExit: 'slide_out_left',
+            endEnter: 'slide_in_left',
+            endExit: 'slide_out_right',
+          },
+          headers: {
+            'my-custom-header': 'my custom header value',
+          },
+        });
+      } else {
+        utils.openUrl(this.boxTechSignUpPage);
+      }
     },
 
     submit() {
