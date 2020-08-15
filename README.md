@@ -60,7 +60,7 @@ tns build <platform> --env.production
 
 **Question:** How can I login in the app?
 
-**Answer:** You've got to first create an account on [BoxTech Global Container Database](https://app.bic-boxtech.org/login) so that you gonna be able to login at the app and behind the scenes, we gonna provide a BoxTech JWT token to allow you to get containers information through the BoxTech Global Container Database API.
+**Answer:** You've got to first create an account on [BoxTech Global Container Database](https://app.bic-boxtech.org/login) so that you gonna be able to login at the app and behind the scenes, we gonna provide a BoxTech JWT token to allow you to get shipping containers information through the BoxTech Global Container Database [API](https://bic-boxtech.github.io/BIC-Boxtech-API-documentation/index.html).
 
 ##
 **Question:** What is BoxTech?
