@@ -12,7 +12,4 @@ export const getters = {
       email: 'test@gmail.com',
     };
   },
-  [`${TYPES.modules.CORE}/${TYPES.getters.GET_LAYOUT_DIRECTION}`]: () => {
-    return null;
-  },
 };

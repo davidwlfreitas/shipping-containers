@@ -43,11 +43,7 @@ describe('DrawerContent.vue', () => {
     expect(wrapper.html()).toBeTruthy();
   });
 
-  it('snapshot', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-
-  it('checks onNavigationItemTap() exsits', () => {
+  it('checks onNavigationItemTap() exists', () => {
     expect(wrapper.vm.onNavigationItemTap).toBeDefined();
   });
 
@@ -57,7 +53,7 @@ describe('DrawerContent.vue', () => {
     expect(wrapper.vm.onNavigationItemTap).toHaveBeenCalled();
   });
 
-  it('checks logout() exsits', () => {
+  it('checks logout() exists', () => {
     expect(wrapper.vm.logout).toBeDefined();
   });
 
