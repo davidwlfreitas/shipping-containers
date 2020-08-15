@@ -34,6 +34,7 @@
 - Shipping Containers Recognition Algorithm based on [ISO 6346](https://en.wikipedia.org/wiki/ISO_6346)
 - Integration with Firebase [Analytics](https://firebase.google.com/docs/analytics/) and [Crashlytics](https://firebase.google.com/docs/crashlytics/)
 - Animation using [Lottie](https://lottiefiles.com/) Files
+- Dark Mode
 
 # :tophat: Running the App
 
@@ -57,6 +58,11 @@ tns build <platform> --env.production
 
 # :postbox: Faq
 
+**Question:** How can I login in the app?
+
+**Answer:** You've got to first create an account on [BoxTech Global Container Database](https://app.bic-boxtech.org/login) so that you gonna be able to login at the app and behind the scenes, we gonna provide you a BoxTech JWT token to allow you to get containers information through the BoxTech Global Container Database API.
+
+##
 **Question:** What is BoxTech?
 
 **Answer:** BoxTech is a non-profit service operated by the [Bureau International des Containers](https://www.bic-code.org/) – a non-profit organization serving the container transportation industry. 
