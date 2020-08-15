@@ -1,6 +1,6 @@
 # Shipping Containers Scanner
 
-> Shipping containers recognition App built with NativeScript-Vue and Firebase using BoxTech API to collect shipping containers data.
+> Shipping containers recognition App built with NativeScript-Vue and Firebase using [BoxTech](https://www.bic-boxtech.org/) API to collect shipping containers data.
 
 [![Author](https://img.shields.io/badge/author-DavidFreitas-049c88?style=flat-square)](https://github.com/davidwlfreitas)
 [![Languages](https://img.shields.io/github/languages/count/davidwlfreitas/shipping-containers?color=%23049c88&style=flat-square)](#)
@@ -20,10 +20,20 @@
 
 # :pushpin: Table of Contents
 
+* [Features](#rocket-features)
 * [Running the App](#tophat-running-the-app)
+* [FAQ](#postbox-faq)
 * [Found a bug? Missing a specific feature?](#bug-issues)
 * [Contributing](#tada-contributing)
 * [License](#closed_book-license)
+
+# :rocket:  Features
+
+- Text Recognition by [Firebase Machine Leaning Kit](https://firebase.google.com/docs/ml)
+- Login integrated with [BoxTech Global Container Database API](https://app.bic-boxtech.org/login)  
+- Shipping Containers Recognition Algorithm based on [ISO 6346](https://en.wikipedia.org/wiki/ISO_6346)
+- Integration with Firebase [Analytics](https://firebase.google.com/docs/analytics/) and [Crashlytics](https://firebase.google.com/docs/crashlytics/)
+- Animation using [Lottie](https://lottiefiles.com/) Files
 
 # :tophat: Running the App
 
@@ -44,6 +54,29 @@ tns debug <platform>
 tns build <platform> --env.production
 
 ```
+
+# :postbox: Faq
+
+**Question:** What is BoxTech?
+
+**Answer:** BoxTech is a non-profit service operated by the [Bureau International des Containers](https://www.bic-code.org/) – a non-profit organization serving the container transportation industry. 
+BoxTech allows shippers, forwarders and other stakeholders to access a single database, eliminating the need to either visit multiple websites to obtain the tare weight data or to obtain this information from the weight indicated on the door of each container.
+Feel free to find more information through their official [website](https://www.bic-boxtech.org/).
+
+##
+**Question:** What is BoxTech Global Container Database?
+
+**Answer:** The BoxTech Global Container Database is a neutral, centralized data repository providing container owners and users a platform to easily exchange container fleet technical details. BoxTech provides an easy-to-access source of container characteristics to help support carriers, shippers, forwarders and other stakeholders in the supply chain. 
+
+##
+**Question:** Is this app running for IOS?
+
+**Answer:** Not yet. Just for Android at the moment.
+
+##
+**Question:** What does ISO 6346 mean?
+
+**Answer:** [ISO 6346](https://en.wikipedia.org/wiki/ISO_6346) is an international standard covering the coding, identification and marking of shipping containers. The standard establishes a visual identification system for every container that includes a unique serial number (with [check digit](https://www.bic-code.org/check-digit-calculator/)), the owner, a country code, a size, type and equipment category as well as any operational marks. The standard is managed by the [International Container Bureau (BIC)](https://www.bic-code.org/).
 
 # :bug: Issues
 
