@@ -57,6 +57,6 @@ Check out the [contributing](https://github.com/davidwlfreitas/shipping-containe
 
 Released in 2020
 
-This project is under the [MIT license](https://github.com/davidwlfreitas/shipping-containers/master/LICENSE).
+This project is under the [MIT license](https://github.com/davidwlfreitas/shipping-containers/blob/master/LICENSE).
 
 Made with :beers: by [David Freitas](https://github.com/davidwlfreitas) :8ball:
