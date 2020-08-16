@@ -1,6 +1,6 @@
 # Shipping Containers Scanner
 
-> Shipping containers recognition App built with NativeScript-Vue and Firebase using [BoxTech](https://www.bic-boxtech.org/) API to collect shipping containers data.
+> Shipping containers recognition App built with NativeScript-Vue and Firebase using [BoxTech](https://www.bic-boxtech.org/) API to collect shipping containers information.
 
 [![Author](https://img.shields.io/badge/author-DavidFreitas-049c88?style=flat-square)](https://github.com/davidwlfreitas)
 [![Languages](https://img.shields.io/github/languages/count/davidwlfreitas/shipping-containers?color=%23049c88&style=flat-square)](#)
