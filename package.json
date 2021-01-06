@@ -25,7 +25,7 @@
     "@nstudio/nativescript-floatingactionbutton": "^2.0.0",
     "@nstudio/nativescript-snackbar": "^1.1.2",
     "@vue/devtools": "^5.0.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "nativescript-fancyalert": "^3.0.9",
     "nativescript-inappbrowser": "^2.3.0",
     "nativescript-lottie": "^4.0.1",
